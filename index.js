@@ -1,12 +1,17 @@
-// Write your solution here!
-const append = ["Milo", "Otis", "Garfield"];
-const prepend = ["Milo", "Otis", "Garfield"];
-const removeLast = ["Milo", "Otis", "Garfield"];
-const removeFirst = ["Milo", "Otis", "Garfield"];
+// Code your solutions in this file
 
-append.push('Odie');
-prepend.unshift('Odie');
-removeLast.pop();
-removeFirst.shift();
+function writeCards(stringNames, event) {
+    for (let i=0; i < stringNames.length; i++) {
+        console.log(`Thank you, ${stringNames[i]}, for the wonderful ${event} gift!`);
+    }
+}
 
+writeCards(["Ada", "Brendan", "Ali"], "birthday");
 
+function countDown(number) {
+    while (number >= 0) {
+        console.log(number--);
+    }
+}
+
+countDown(10);
